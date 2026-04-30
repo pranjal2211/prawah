@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/pranj/OneDrive/Desktop/code/app/analytics/page.tsx"],"sourcesContent":["export const metadata = {\n  title: \"Analytics | Electricity Demand\",\n  description: \"Historical data and analytics for electricity demand\",\n}\n\nexport default function AnalyticsPage() {\n  return (\n    <main className=\"min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center\">\n      <div className=\"text-center\">\n        <h1 className=\"text-4xl font-bold text-white mb-4\">Work in Progress</h1>\n        <p className=\"text-xl text-slate-300\">The analytics page is coming soon.</p>\n      </div>\n    </main>\n  )\n}\n"],"names":[],"mappings":";;;;;;;;AAAO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAU;kBACd,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAAqC;;;;;;8BACnD,8OAAC;oBAAE,WAAU;8BAAyB;;;;;;;;;;;;;;;;;AAI9C","debugId":null}}]
+}

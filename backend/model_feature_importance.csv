@@ -1,0 +1,67 @@
+feature,importance
+num__Energy_Met_MU,0.9948922327441435
+num__Temp_Min,0.0020027801469883677
+num__Temp_Avg,0.00037769511907297717
+num__Drawal_Schedule_MU,0.0003040363597825793
+num__Humidity,0.00026661349955521167
+num__Temp_Max,0.00018151631104731944
+num__OD_UD_MU,0.00015557377133069815
+cat__Season_Winter,0.00014805802984987258
+cat__State_Karnataka,0.00013610865591889712
+num__Max_OD_MW,0.00013337091970485755
+cat__State_Chhattisgarh,0.0001272134709341548
+num__Rainfall,0.00011495364070250087
+cat__State_Gujarat,0.00010622569017629634
+num__day,9.45259774193142e-05
+num__month_cos,8.042397509432e-05
+num__Year,8.01988988238803e-05
+num__Month,7.894128323129649e-05
+num__month,7.708508674349425e-05
+num__year,7.055240155073617e-05
+cat__Season_Monsoon,7.028015135280362e-05
+num__month_sin,6.706997161296262e-05
+cat__State_Dadra And Nagar Haveli And Daman And Diu,5.1963212965529045e-05
+cat__State_Madhya Pradesh,5.144316669623893e-05
+num__dayofweek,5.1107244394216924e-05
+num__dow_sin,2.8831176399633106e-05
+num__Energy_Shortage_MU,2.65560721225532e-05
+cat__State_Bihar,2.418229633105762e-05
+cat__Weekday_Sunday,2.3520676501617784e-05
+cat__State_Punjab,2.071066152558855e-05
+num__dow_cos,2.0364963472567377e-05
+cat__State_Tamil Nadu,1.957873172422926e-05
+cat__State_Andhra Pradesh,1.6022110645583014e-05
+num__Shortage_MW,8.874694661935188e-06
+cat__State_Jharkhand,8.289676145499597e-06
+cat__State_Delhi,7.878691359638067e-06
+cat__Season_Post-Monsoon,7.542097818232058e-06
+cat__State_Rajasthan,6.62381054576584e-06
+cat__Season_Summer,6.437818920741488e-06
+cat__State_Odisha,6.204424999494742e-06
+cat__State_Telangana,6.167906921919608e-06
+cat__Weekday_Friday,6.019345678614257e-06
+cat__Weekday_Thursday,5.630926421980401e-06
+cat__Weekday_Monday,5.485379626343916e-06
+cat__Weekday_Tuesday,4.644889410197332e-06
+cat__Weekday_Wednesday,4.499969339177733e-06
+cat__State_Haryana,4.149180415387545e-06
+cat__Weekday_Saturday,3.3905390130670977e-06
+cat__State_Assam,2.8129582034818945e-06
+cat__State_Jammu And Kashmir,2.6110427697116454e-06
+cat__State_Goa,8.489114051268933e-07
+cat__State_Meghalaya,7.537051712406699e-07
+cat__State_Kerala,4.52828516685519e-07
+cat__State_Manipur,4.0997371756567496e-07
+cat__State_Maharashtra,3.521257534555065e-07
+cat__State_Himachal Pradesh,6.03252418969845e-08
+cat__State_Puducherry,3.7119821298469056e-08
+cat__State_Arunachal Pradesh,3.425780725090139e-08
+cat__State_Sikkim,2.6183009446806323e-08
+cat__State_Nagaland,1.5026761572492578e-08
+cat__State_Mizoram,4.886544787549588e-09
+cat__State_Chandigarh,2.9632232786239786e-09
+cat__State_Other,1.922960122459786e-09
+cat__State_West Bengal,0.0
+cat__State_Uttarakhand,0.0
+cat__State_Uttar Pradesh,0.0
+cat__State_Tripura,0.0
