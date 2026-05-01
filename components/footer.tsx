@@ -48,7 +48,7 @@ export default function Footer() {
           </p>
 
           <p className="text-lg text-var(--primary-dark)/50">
-            Designed and Developed by Vaibhav Porwal, Priyam Patel and Pranjal Kumar 
+            Designed and Developed by Priyam Patel, Pranjal Kumar and Vaibhav Porwal
           </p>
         </div>
       </div>
