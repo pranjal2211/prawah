@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Calendar, AlertTriangle, CheckCircle2, Cloud, Droplets, Thermometer, Zap } from "lucide-react"
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_SHORTAGE_API_URL || "http://localhost:8001"
+
 const states = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
   "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand",
@@ -79,7 +81,7 @@ export default function ShortagePredictionForm() {
 
     try {
       // Call the shortage API prediction endpoint
-      const response = await fetch("http://localhost:8001/predict", {
+      const response = await fetch(`${API_BASE_URL}/predict`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

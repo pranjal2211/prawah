@@ -29,7 +29,7 @@ interface PredictionResult {
 }
 
 // Set your FastAPI backend URL here. If running locally, use http://localhost:8000
-const BACKEND_URL = "http://localhost:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_DEMAND_API_URL || "http://localhost:8000";
 
 export default function PredictionForm() {
     // Helper to ensure date is always in YYYY-MM-DD
