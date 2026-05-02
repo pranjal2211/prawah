@@ -38,6 +38,196 @@ STATE_COORDS = {
     "Ladakh":               {"lat": 34.1526, "lon": 77.5770},
 }
 
+# ─── City coordinates for detailed weather analysis ────────────────────────
+CITY_COORDS = {
+    "Andhra Pradesh": [
+        {"city": "Hyderabad", "lat": 17.3850, "lon": 78.4867},
+        {"city": "Visakhapatnam", "lat": 17.6869, "lon": 83.2185},
+        {"city": "Vijayawada", "lat": 16.5062, "lon": 80.6480},
+        {"city": "Tirupati", "lat": 13.1939, "lon": 79.8245},
+    ],
+    "Arunachal Pradesh": [
+        {"city": "Itanagar", "lat": 28.2180, "lon": 93.7597},
+        {"city": "Naharlagun", "lat": 28.0708, "lon": 93.7373},
+        {"city": "Pasighat", "lat": 28.0738, "lon": 93.8286},
+        {"city": "Tezu", "lat": 28.8452, "lon": 96.1684},
+    ],
+    "Assam": [
+        {"city": "Guwahati", "lat": 26.1445, "lon": 91.7362},
+        {"city": "Silchar", "lat": 24.8321, "lon": 92.7789},
+        {"city": "Dibrugarh", "lat": 27.4728, "lon": 94.9142},
+        {"city": "Nagaon", "lat": 26.2998, "lon": 92.6726},
+    ],
+    "Bihar": [
+        {"city": "Patna", "lat": 25.5941, "lon": 85.1376},
+        {"city": "Gaya", "lat": 24.7955, "lon": 84.9994},
+        {"city": "Bhagalpur", "lat": 25.2480, "lon": 86.4862},
+        {"city": "Muzaffarpur", "lat": 26.1209, "lon": 85.3910},
+    ],
+    "Chhattisgarh": [
+        {"city": "Raipur", "lat": 21.2514, "lon": 81.6296},
+        {"city": "Bilaspur", "lat": 22.0796, "lon": 82.1587},
+        {"city": "Durg", "lat": 21.1854, "lon": 81.2711},
+        {"city": "Rajnandgaon", "lat": 22.6625, "lon": 81.0527},
+    ],
+    "Goa": [
+        {"city": "Panaji", "lat": 15.4909, "lon": 73.8278},
+        {"city": "Margao", "lat": 15.2993, "lon": 73.9537},
+        {"city": "Vasco", "lat": 15.3805, "lon": 73.8340},
+        {"city": "Ponda", "lat": 15.4048, "lon": 74.0213},
+    ],
+    "Gujarat": [
+        {"city": "Ahmedabad", "lat": 23.0225, "lon": 72.5714},
+        {"city": "Surat", "lat": 21.1707, "lon": 72.8311},
+        {"city": "Vadodara", "lat": 22.3072, "lon": 73.1812},
+        {"city": "Rajkot", "lat": 22.3039, "lon": 70.8022},
+    ],
+    "Haryana": [
+        {"city": "Faridabad", "lat": 28.4089, "lon": 77.3178},
+        {"city": "Gurgaon", "lat": 28.4595, "lon": 77.0266},
+        {"city": "Hisar", "lat": 29.1493, "lon": 75.7233},
+        {"city": "Ambala", "lat": 30.3814, "lon": 76.7733},
+    ],
+    "Himachal Pradesh": [
+        {"city": "Shimla", "lat": 31.7725, "lon": 77.1711},
+        {"city": "Solan", "lat": 30.8139, "lon": 77.1742},
+        {"city": "Mandi", "lat": 31.5885, "lon": 76.9270},
+        {"city": "Kangra", "lat": 32.2206, "lon": 76.2596},
+    ],
+    "Jharkhand": [
+        {"city": "Ranchi", "lat": 23.3441, "lon": 85.3096},
+        {"city": "Dhanbad", "lat": 23.7957, "lon": 86.4304},
+        {"city": "Giridih", "lat": 24.1784, "lon": 85.3281},
+        {"city": "Deoghar", "lat": 24.4845, "lon": 86.6612},
+    ],
+    "Karnataka": [
+        {"city": "Bengaluru", "lat": 12.9716, "lon": 77.5946},
+        {"city": "Mysuru", "lat": 12.2958, "lon": 76.6394},
+        {"city": "Belagavi", "lat": 15.8497, "lon": 74.5044},
+        {"city": "Mangaluru", "lat": 12.8657, "lon": 74.8550},
+    ],
+    "Kerala": [
+        {"city": "Kochi", "lat": 9.9312, "lon": 76.2673},
+        {"city": "Thiruvananthapuram", "lat": 8.5241, "lon": 76.9366},
+        {"city": "Kozhikode", "lat": 11.2588, "lon": 75.7804},
+        {"city": "Kottayam", "lat": 9.5941, "lon": 76.5214},
+    ],
+    "Madhya Pradesh": [
+        {"city": "Indore", "lat": 22.7196, "lon": 75.8577},
+        {"city": "Bhopal", "lat": 23.1815, "lon": 79.9864},
+        {"city": "Jabalpur", "lat": 23.1815, "lon": 79.9864},
+        {"city": "Ujjain", "lat": 23.1815, "lon": 75.7769},
+    ],
+    "Maharashtra": [
+        {"city": "Mumbai", "lat": 19.0760, "lon": 72.8777},
+        {"city": "Pune", "lat": 18.5204, "lon": 73.8567},
+        {"city": "Nagpur", "lat": 21.1458, "lon": 79.0882},
+        {"city": "Aurangabad", "lat": 19.8762, "lon": 75.3433},
+    ],
+    "Manipur": [
+        {"city": "Imphal", "lat": 24.8170, "lon": 94.9042},
+        {"city": "Bishnupur", "lat": 24.8213, "lon": 94.9042},
+        {"city": "Thoubal", "lat": 24.7641, "lon": 94.6009},
+        {"city": "Ukhrul", "lat": 25.0368, "lon": 94.3678},
+    ],
+    "Meghalaya": [
+        {"city": "Shillong", "lat": 25.5788, "lon": 91.8933},
+        {"city": "Tura", "lat": 25.5153, "lon": 90.2412},
+        {"city": "Cherrapunji", "lat": 25.2730, "lon": 91.7300},
+        {"city": "Jowai", "lat": 25.4833, "lon": 92.3500},
+    ],
+    "Mizoram": [
+        {"city": "Aizawl", "lat": 23.7271, "lon": 93.3062},
+        {"city": "Lunglei", "lat": 22.8861, "lon": 92.7375},
+        {"city": "Saiha", "lat": 22.4297, "lon": 93.0066},
+        {"city": "Champhai", "lat": 23.4717, "lon": 93.3141},
+    ],
+    "Nagaland": [
+        {"city": "Kohima", "lat": 25.6151, "lon": 94.1086},
+        {"city": "Dimapur", "lat": 25.9064, "lon": 93.7304},
+        {"city": "Mokokchung", "lat": 26.1347, "lon": 94.5192},
+        {"city": "Tuensang", "lat": 26.1603, "lon": 94.8508},
+    ],
+    "Odisha": [
+        {"city": "Bhubaneswar", "lat": 20.2961, "lon": 85.8245},
+        {"city": "Cuttack", "lat": 20.4625, "lon": 85.8830},
+        {"city": "Rourkela", "lat": 22.2264, "lon": 84.8615},
+        {"city": "Sambalpur", "lat": 21.4617, "lon": 83.9547},
+    ],
+    "Punjab": [
+        {"city": "Chandigarh", "lat": 30.7333, "lon": 76.7794},
+        {"city": "Amritsar", "lat": 31.6340, "lon": 74.8723},
+        {"city": "Ludhiana", "lat": 30.9010, "lon": 75.8573},
+        {"city": "Jalandhar", "lat": 31.7260, "lon": 75.5762},
+    ],
+    "Rajasthan": [
+        {"city": "Jaipur", "lat": 26.9124, "lon": 75.7873},
+        {"city": "Jodhpur", "lat": 26.2389, "lon": 73.0243},
+        {"city": "Udaipur", "lat": 24.5854, "lon": 73.7125},
+        {"city": "Kota", "lat": 25.2138, "lon": 75.8648},
+    ],
+    "Sikkim": [
+        {"city": "Gangtok", "lat": 27.5330, "lon": 88.5122},
+        {"city": "Namchi", "lat": 27.1656, "lon": 88.3837},
+        {"city": "Geyzing", "lat": 27.3046, "lon": 88.2104},
+        {"city": "Pelling", "lat": 27.2067, "lon": 88.2310},
+    ],
+    "Tamil Nadu": [
+        {"city": "Chennai", "lat": 13.0827, "lon": 80.2707},
+        {"city": "Coimbatore", "lat": 11.0066, "lon": 76.9655},
+        {"city": "Madurai", "lat": 9.9252, "lon": 78.1198},
+        {"city": "Salem", "lat": 11.6643, "lon": 78.1460},
+    ],
+    "Telangana": [
+        {"city": "Hyderabad", "lat": 17.3850, "lon": 78.4867},
+        {"city": "Secunderabad", "lat": 17.3729, "lon": 78.5101},
+        {"city": "Warangal", "lat": 17.9689, "lon": 79.5941},
+        {"city": "Karimnagar", "lat": 18.4386, "lon": 78.1384},
+    ],
+    "Tripura": [
+        {"city": "Agartala", "lat": 23.8103, "lon": 91.2787},
+        {"city": "Udaipur", "lat": 23.5331, "lon": 91.5550},
+        {"city": "Dharmanagar", "lat": 23.4583, "lon": 91.5833},
+        {"city": "Khowai", "lat": 23.7667, "lon": 91.6000},
+    ],
+    "Uttar Pradesh": [
+        {"city": "Lucknow", "lat": 26.8467, "lon": 80.9462},
+        {"city": "Kanpur", "lat": 26.4499, "lon": 80.3319},
+        {"city": "Agra", "lat": 27.1767, "lon": 78.0081},
+        {"city": "Varanasi", "lat": 25.3201, "lon": 82.9789},
+    ],
+    "Uttarakhand": [
+        {"city": "Dehradun", "lat": 30.3165, "lon": 78.0322},
+        {"city": "Nainital", "lat": 29.3919, "lon": 79.4504},
+        {"city": "Rishikesh", "lat": 30.0889, "lon": 78.2679},
+        {"city": "Almora", "lat": 29.5880, "lon": 79.6567},
+    ],
+    "West Bengal": [
+        {"city": "Kolkata", "lat": 22.5726, "lon": 88.3639},
+        {"city": "Asansol", "lat": 23.6840, "lon": 86.9740},
+        {"city": "Durgapur", "lat": 23.8103, "lon": 87.3139},
+        {"city": "Siliguri", "lat": 26.5124, "lon": 88.4106},
+    ],
+    "Delhi": [
+        {"city": "New Delhi", "lat": 28.5355, "lon": 77.3910},
+        {"city": "Old Delhi", "lat": 28.6505, "lon": 77.2303},
+        {"city": "South Delhi", "lat": 28.5244, "lon": 77.1855},
+        {"city": "West Delhi", "lat": 28.6662, "lon": 77.0589},
+    ],
+    "Jammu and Kashmir": [
+        {"city": "Srinagar", "lat": 34.0837, "lon": 74.7973},
+        {"city": "Jammu", "lat": 32.7269, "lon": 74.8577},
+        {"city": "Baramulla", "lat": 34.2008, "lon": 74.3368},
+        {"city": "Anantnag", "lat": 33.7280, "lon": 75.1597},
+    ],
+    "Ladakh": [
+        {"city": "Leh", "lat": 34.1526, "lon": 77.5770},
+        {"city": "Kargil", "lat": 34.5581, "lon": 76.1071},
+        {"city": "Khaltsi", "lat": 34.4833, "lon": 76.5833},
+        {"city": "Dha-Hanu", "lat": 34.3667, "lon": 76.9500},
+    ],
+}
+
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
 
