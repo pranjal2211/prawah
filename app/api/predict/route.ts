@@ -1,9 +1,9 @@
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    
-    const demandApiUrl = process.env.PYTHON_DEMAND_API_URL || "http://127.0.0.1:5000"
-    const response = await fetch(`${demandApiUrl}/api/predict`, {
+  
+const DEMAND_API_URL = process.env.PYTHON_DEMAND_API_URL || "http://localhost:8000"
+const response = await fetch(`${DEMAND_API_URL}/predict_with_weather`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
