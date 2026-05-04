@@ -17,7 +17,7 @@ if not exist "backend" (
 
 REM Ask user what to start
 echo What would you like to do?
-echo 1. Start Backend Only (Flask API)
+echo 1. Start Backend Only (FastAPI)
 echo 2. Start Frontend Only (Next.js)
 echo 3. Start Both (Backend and Frontend)
 echo 4. Install Dependencies
@@ -29,7 +29,7 @@ set /p choice="Enter your choice (1-5): "
 if "%choice%"=="1" (
     cls
     echo ============================================================
-    echo Starting Backend Server (Flask)
+    echo Starting Backend Server (FastAPI)
     echo ============================================================
     echo.
     cd backend
@@ -45,7 +45,7 @@ if "%choice%"=="1" (
     call venv\Scripts\activate.bat
     
     REM Install dependencies if needed
-    pip show flask >nul 2>&1
+    pip show fastapi >nul 2>&1
     if errorlevel 1 (
         echo Installing dependencies...
         pip install -r requirements.txt
@@ -53,10 +53,10 @@ if "%choice%"=="1" (
     
     REM Start server
     echo.
-    echo Starting Flask server on http://localhost:5000
+    echo Starting FastAPI server on http://localhost:8000
     echo Press Ctrl+C to stop
     echo.
-    python run.py
+    python -m uvicorn predict_api_fast:app --reload --host 127.0.0.1 --port 8000
     
 ) else if "%choice%"=="2" (
     cls
@@ -106,7 +106,7 @@ if "%choice%"=="1" (
     
     cls
     echo ============================================================
-    echo Starting Backend Server (Flask)
+    echo Starting Backend Server (FastAPI)
     echo ============================================================
     echo.
     cd backend
@@ -121,7 +121,7 @@ if "%choice%"=="1" (
     call venv\Scripts\activate.bat
     
     REM Install dependencies
-    pip show flask >nul 2>&1
+    pip show fastapi >nul 2>&1
     if errorlevel 1 (
         echo Installing dependencies...
         pip install -r requirements.txt
@@ -129,10 +129,10 @@ if "%choice%"=="1" (
     
     REM Start server
     echo.
-    echo Starting Flask server on http://localhost:5000
+    echo Starting FastAPI server on http://localhost:8000
     echo Open another terminal window and run: pnpm dev
     echo.
-    python run.py
+    python -m uvicorn predict_api_fast:app --reload --host 127.0.0.1 --port 8000
     
 ) else if "%choice%"=="4" (
     cls

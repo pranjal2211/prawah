@@ -24,7 +24,7 @@ const response = await fetch(`${DEMAND_API_URL}/predict_with_weather`, {
   } catch (error) {
     console.error("API route error:", error)
     return Response.json(
-      { message: "Failed to connect to backend. Make sure the Flask server is running on port 5000." },
+      { message: "Failed to connect to backend. Make sure the FastAPI server is running on port 8000." },
       { status: 500 }
     )
   }

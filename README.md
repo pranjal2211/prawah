@@ -194,7 +194,7 @@ electricity-demand-prediction/
 
 ## API Integration (Backend Ready)
 
-This frontend is ready to connect to a Flask/FastAPI backend. To integrate:
+This frontend is ready to connect to a FastAPI backend. To integrate:
 
 1. **Set your backend API URL** in `.env.local`:
    \`\`\`
@@ -296,7 +296,7 @@ npm run dev
 
 ## Future Enhancements
 
-- Backend API integration with Flask/FastAPI
+- Backend API integration with FastAPI
 - Real-time data fetching from electricity boards
 - User authentication and profiles
 - Export predictions to CSV/PDF

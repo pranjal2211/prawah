@@ -16,7 +16,7 @@ if (-not (Test-Path "backend")) {
 
 # Menu
 Write-Host "What would you like to do?" -ForegroundColor Yellow
-Write-Host "1. Start Backend Only (Flask API)" -ForegroundColor White
+Write-Host "1. Start Backend Only (FastAPI)" -ForegroundColor White
 Write-Host "2. Start Frontend Only (Next.js)" -ForegroundColor White
 Write-Host "3. Start Both (Backend and Frontend)" -ForegroundColor White
 Write-Host "4. Install Dependencies" -ForegroundColor White
@@ -29,7 +29,7 @@ $choice = Read-Host "Enter your choice (1-6)"
 function Start-Backend {
     Clear-Host
     Write-Host "============================================================" -ForegroundColor Cyan
-    Write-Host "Starting Backend Server (Flask)" -ForegroundColor Cyan
+    Write-Host "Starting Backend Server (FastAPI)" -ForegroundColor Cyan
     Write-Host "============================================================" -ForegroundColor Cyan
     Write-Host ""
     
@@ -46,16 +46,16 @@ function Start-Backend {
     Write-Host "Activating virtual environment..." -ForegroundColor Green
     & .\venv\Scripts\Activate.ps1
     
-    # Check if Flask is installed
-    $flaskCheck = pip list | Select-String -Pattern "Flask" -Quiet
-    if (-not $flaskCheck) {
+    # Check if FastAPI is installed
+    $fastapiCheck = pip list | Select-String -Pattern "fastapi" -Quiet
+    if (-not $fastapiCheck) {
         Write-Host "Installing dependencies..." -ForegroundColor Yellow
         pip install -r requirements.txt
     }
     
     # Start server
     Write-Host ""
-    Write-Host "Starting Flask server on http://localhost:5000" -ForegroundColor Green
+    Write-Host "Starting FastAPI server on http://localhost:8000" -ForegroundColor Green
     Write-Host "Press Ctrl+C to stop" -ForegroundColor Yellow
     Write-Host ""
     
@@ -227,7 +227,7 @@ switch ($choice) {
         Write-Host "Starting both services will require TWO terminal windows." -ForegroundColor Yellow
         Write-Host ""
         Write-Host "Follow these steps:" -ForegroundColor Cyan
-        Write-Host "1. This window will start the Backend (Flask)" -ForegroundColor White
+        Write-Host "1. This window will start the Backend (FastAPI)" -ForegroundColor White
         Write-Host "2. Open another PowerShell window" -ForegroundColor White
         Write-Host "3. Navigate to this project's root directory" -ForegroundColor White
         Write-Host "4. Run: pnpm dev" -ForegroundColor White
