@@ -349,12 +349,6 @@ For issues or questions:
 2. Create a new issue with detailed description
 3. Include reproduction steps and environment details
 
-## Contact
-
-- **Project Repository**: [GitHub Link]
-- **Issues**: [GitHub Issues]
-- **Discussions**: [GitHub Discussions]
-
 ---
 
 **Happy Predicting! 🔌⚡**
